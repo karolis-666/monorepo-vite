@@ -1,0 +1,83 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-style: 'normal';
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  src: local('Montserrat'),
+    url(@global/assets/fonts/Montserrat-Light.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: 'normal';
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  src: local('Montserrat'),
+    url(@global/assets/fonts/Montserrat-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: 'normal';
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  src: local('Montserrat'),
+    url(@global/assets/fonts/Montserrat-Medium.woff) format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: 'normal';
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  src: local('Montserrat'),
+    url(@global/assets/fonts/Montserrat-SemiBold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-style: 'normal';
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  src: local('Montserrat'),
+    url(@global/assets/fonts/Montserrat-Bold.woff) format('woff');
+}
+
+.recharts-wrapper .recharts-cartesian-grid-horizontal line:last-child {
+  stroke-opacity: 0;
+}

@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+
+    // todo: check
+    /* Bundler mode */
+    "moduleResolution": "node",
+    // "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Temporary alias
+    "paths": {
+      "@utils*": ["./src/utils/*", "./src/utils"],
+      "@components*": ["./src/components/*", "./src/components"],
+      "@state*": ["./src/state/*"],
+      "@styles*": ["./src/styles/*"],
+      "@api*": ["./src/api/*"],
+      "@assets*": ["./src/assets/*"],
+      "@config*": ["./src/config/*", "./src/config"],
+      "@auth*": ["./src/auth/*", "./src/auth"],
+      "@hooks*": ["./src/hooks/*", "./src/hooks"],
+      "@router*": ["./src/router/*", "./src/router"],
+      "@pages*": ["./src/pages/*"],
+      "@providers*": ["./src/providers/*", "./src/providers"],
+      "@hoc*": ["./src/hoc/*", "./src/hoc"]
+    }
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
